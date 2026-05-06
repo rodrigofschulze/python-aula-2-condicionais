@@ -1,10 +1,10 @@
 salario = float(input("digite um salário"))
+desconto10 = salario - (salario / 10)
+desconto5 = salario - (salario / 5)
 
-if salario == 5000:
-    print("esse é o primeiro salário")
-elif 5000 % 10:
-    print(f"{salario}foi aplicado o desconto")
-elif 5000 % 5:
-    print(f"{salario}foi aplicado outro desconto")
+if salario > 5000:
+    print(f"seu salário é {desconto10}")
+elif salario < 5000:
+    print(f"seu salário é {desconto5}")
 else:
-    print(f"{salario}não haverá desconto")
+    print(f"{salario} não haverá desconto")
